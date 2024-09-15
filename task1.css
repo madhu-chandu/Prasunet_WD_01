@@ -1,0 +1,175 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Default background */
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #ff0;
+}
+
+/* Content spacing */
+#content {
+    margin-top: 60px; /* Adjust based on navbar height */
+}
+
+/* Section styles */
+section {
+    padding: 50px 10%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+section:nth-of-type(even) {
+    background-color: #f4f4f4;
+}
+
+/* Home Section */
+#home {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRjtLVYtsKGMBISQ-LuXTeQNzfgOpSQvVEIA&s'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    background-color: #333; /* Fallback background color */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20%;
+}
+
+#home h4 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+#home p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* About, Services, and Contact Section Styles */
+#about, #services, #contact {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Service section list */
+#services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#services li {
+    margin-bottom: 10px;
+}
+
+/* Contact section */
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* ----------- Responsive Adjustments ----------- */
+
+/* For small devices (max width: 768px, typical tablets and mobile devices) */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 5%;
+    }
+
+    #home h1 {
+        font-size: 2.5em;
+    }
+
+    #home h4 {
+        font-size: 1.2em;
+    }
+
+    #home p {
+        font-size: 1em;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navbar li {
+        margin: 5px 0;
+    }
+}
+
+/* For very small devices (max width: 480px, typical mobile devices) */
+@media (max-width: 480px) {
+    section {
+        padding: 30px 5%;
+    }
+
+    #home h1 {
+        font-size: 2em;
+    }
+
+    #home h4 {
+        font-size: 1em;
+    }
+
+    #home p {
+        font-size: 0.9em;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #navbar a {
+        padding: 10px;
+    }
+}
